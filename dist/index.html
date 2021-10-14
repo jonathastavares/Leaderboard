@@ -3,32 +3,43 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
+<html lang='en-US'>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Leaderboard</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    <script defer src="index.js"></script></head>
+    <script defer src="index.js"></script><script defer src="main.js"></script></head>
     <body>
         <nav>
             <div>
                 <h1 class='title'>Leaderboard</h1>
             </div>
         </nav>
-        <div>
-            <div class='left-div'>
-                <h3 class='scores-title'>Recent Scores <button class='refresh-btn'>Refresh</button></h3>
-                <div class='scores-table'>
+        <div class='main-container d-flex justify-content-center'>
+            <div class='left-container'>
+                <div class='title-container d-flex'>
+                    <h3 class='scores-title'>Recent Scores</h3>
+                    <button class='refresh-btn' type='button'>Refresh</button>
+                </div>
+                <div class='scores-table border'>
                     <ul class='scores-list'>
                         <!-- Insert Scores here -->
                     </ul>
                 </div>
             </div>
-            <div class='right-div'>
-
+            <div class='right-container d-flex justify-content-center'>
+                <h3 class='add-score'>Add your score</h3>
+                <div class='input-container'>
+                    <input class='input-box border' type='text' placeholder="Your name">
+                    <br>
+                    <input class='input-box border' type='text' placeholder="Your score">
+                    <br>
+                    <div class='submit-btn-container'>
+                        <button class='submit-btn' type='submit'>Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
 
