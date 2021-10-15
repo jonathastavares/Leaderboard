@@ -1,5 +1,32 @@
+body {
+  background-color: rgb(255, 255, 197);
+}
+
+::placeholder {
+  color: rgb(206, 115, 115);
+  text-align: center;
+}
+
+input,
+select,
+textarea {
+  color: rgb(206, 115, 115);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: rgb(206, 115, 115) !important;
+  font-size: 16px !important;
+  color: rgb(255, 255, 197);
+  font-weight: bolder;
+}
+
 .title {
-  font-size: 50px;
+  font-size: 70px;
+  text-align: center;
+  color: rgb(206, 115, 115);
+  font-weight: bold;
 }
 
 .d-flex {
@@ -15,12 +42,26 @@
 }
 
 .border {
-  border: 2px black solid;
+  border: 3px rgb(206, 115, 115) solid !important;
 }
 
 .scores-title {
-  font-size: 30px;
+  font-size: 40px;
   margin-right: 30px;
+  color: rgb(206, 115, 115);
+  font-weight: bold;
+}
+
+.board-title {
+  font-size: 24px !important;
+  font-weight: bolder;
+  color: rgb(206, 115, 115);
+}
+
+.board-item {
+  color: rgb(206, 115, 115);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .main-container {
@@ -43,6 +84,7 @@
 .right-container {
   padding: 50px;
   width: 35%;
+  align-self: baseline;
 }
 
 .right-container {
@@ -65,10 +107,13 @@
 .input-box {
   margin: 8px 0;
   padding: 3px 0;
+  background-color: rgb(255, 255, 197);
 }
 
 .add-score {
-  font-size: 30px;
+  font-size: 40px;
+  color: rgb(206, 115, 115);
+  font-weight: bold;
 }
 
 .submit-btn-container {

@@ -2,7 +2,7 @@
 import './style.css';
 import fetch from 'cross-fetch';
 
-const gameId = 'Jonathas2021';
+const gameId = 'JonathasMicroverse2021';
 const submit = document.getElementById('submit');
 const reload = document.getElementById('reload');
 const list = document.querySelector('.scores-list');
@@ -11,7 +11,7 @@ const score = document.getElementById('score');
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`;
 
 const populate = (data) => {
-  list.innerHTML = '<li class="d-flex justify-content-around"><span>Name</span> <span>score</span></li>';
+  list.innerHTML = '<li class="d-flex justify-content-around board-title"><span>Name</span> <span>score</span></li>';
   data.forEach((result) => {
     const { user, score } = result;
     const listItem = document.createElement('li');
@@ -23,6 +23,7 @@ const populate = (data) => {
     listItem.appendChild(scoreContain);
     listItem.classList.add('d-flex');
     listItem.classList.add('justify-content-around');
+    listItem.classList.add('board-item');
     list.appendChild(listItem);
   });
 };

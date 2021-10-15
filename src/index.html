@@ -10,6 +10,7 @@
         <title>Leaderboard</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <body>
         <nav>
@@ -21,7 +22,7 @@
             <div class='left-container'>
                 <div class='title-container d-flex'>
                     <h3 class='scores-title'>Recent Scores</h3>
-                    <button id='reload' class='refresh-btn' type='button'>Refresh</button>
+                    <button id='reload' class='refresh-btn btn btn-danger shadow' type='button'>Refresh</button>
                 </div>
                 <div class='scores-table border'>
                     <ul class='scores-list'>
@@ -30,14 +31,14 @@
                 </div>
             </div>
             <div class='right-container d-flex justify-content-center'>
-                <h3 class='add-score'>Add your score</h3>
+                <h3 class='add-score'>Add Score</h3>
                 <div class='input-container'>
                     <input id='name' class='input-box border' type='text' placeholder="Your name" required>
                     <br>
                     <input id='score' class='input-box border' type='number' placeholder="Your score" required>
                     <br>
                     <div class='submit-btn-container'>
-                        <button id='submit' class='submit-btn' type='submit'>Submit</button>
+                        <button id='submit' class='submit-btn btn btn-danger shadow' type='submit'>Submit</button>
                     </div>
                 </div>
             </div>
