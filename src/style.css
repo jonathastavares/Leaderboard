@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+.justify-content-around {
+  justify-content: space-around;
+}
+
 .border {
   border: 2px black solid;
 }
@@ -47,6 +51,11 @@
 
 .scores-table {
   padding: 2px;
+}
+
+.scores-list {
+  list-style: none;
+  padding: 0 30px;
 }
 
 .input-container {
