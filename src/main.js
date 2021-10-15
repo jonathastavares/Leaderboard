@@ -10,7 +10,7 @@ const name = document.getElementById('name');
 const score = document.getElementById('score');
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`;
 
-function populate(data) {
+const populate = (data) => {
   list.innerHTML = '<li class="d-flex justify-content-around"><span>Name</span> <span>score</span></li>';
   data.forEach((result) => {
     const { user, score } = result;
@@ -25,7 +25,7 @@ function populate(data) {
     listItem.classList.add('justify-content-around');
     list.appendChild(listItem);
   });
-}
+};
 
 const createScore = async () => {
   if (name.value && score.value) {
