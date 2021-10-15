@@ -116,10 +116,13 @@ textarea {
   font-weight: bold;
 }
 
-.submit-btn-container {
-  width: 31%;
-  display: flex;
+.btn-container {
+  flex-grow: 1;
   justify-content: right;
+}
+
+.btn-submit {
+  width: 199px;
 }
 
 .submit-btn {

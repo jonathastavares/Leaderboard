@@ -22,7 +22,9 @@
             <div class='left-container'>
                 <div class='title-container d-flex'>
                     <h3 class='scores-title'>Recent Scores</h3>
-                    <button id='reload' class='refresh-btn btn btn-danger shadow' type='button'>Refresh</button>
+                    <div class='d-flex btn-container'>
+                        <button id='reload' class='refresh-btn btn btn-danger shadow' type='button'>Refresh</button>
+                    </div>
                 </div>
                 <div class='scores-table border'>
                     <ul class='scores-list'>
@@ -37,7 +39,7 @@
                     <br>
                     <input id='score' class='input-box border' type='number' placeholder="Your score" required>
                     <br>
-                    <div class='submit-btn-container'>
+                    <div class='d-flex btn-container btn-submit'>
                         <button id='submit' class='submit-btn btn btn-danger shadow' type='submit'>Submit</button>
                     </div>
                 </div>
